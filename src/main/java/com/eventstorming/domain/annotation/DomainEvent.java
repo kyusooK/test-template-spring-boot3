@@ -34,7 +34,7 @@ public @interface DomainEvent {
 
 <function>
     window.$HandleBars.registerHelper('checkException', function (boundedContext) {
-        if(boundedContext.views){
+        if(boundedContext.views.length > 0){
             return true;
         }else{
             return false;
