@@ -1,3 +1,5 @@
+path: path: {{boundedContext.name}}/{{{options.packagePath}}}/domain/{{boundedContext.name}}
+---
 package {{options.package}}.domain.annotation;
 
 import java.lang.annotation.ElementType;
