@@ -1,4 +1,4 @@
-path: path: {{boundedContext.name}}/{{{options.packagePath}}}/domain/{{boundedContext.name}}
+path: {{boundedContext.name}}/{{{options.packagePath}}}/domain
 ---
 package {{options.package}}.domain.annotation;
 

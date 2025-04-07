@@ -1,6 +1,6 @@
 forEach: Event
 fileName: {{namePascalCase}}.java
-path: {{boundedContext.name}}/{{{options.packagePath}}}/domain/event
+path: {{boundedContext.name}}/{{{options.packagePath}}}/domain
 ---
 package {{options.package}}.domain.event;
 
