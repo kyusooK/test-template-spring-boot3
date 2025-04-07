@@ -1,3 +1,4 @@
+path: {{name}}/{{{options.packagePath}}}/domain/annotation
 except: {{#checkException this}}{{/checkException}}
 ---
 package {{options.package}}.domain.annotation;
