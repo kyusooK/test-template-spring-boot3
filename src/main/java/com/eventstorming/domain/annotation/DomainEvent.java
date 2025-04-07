@@ -1,4 +1,5 @@
 path: {{boundedContext.name}}/{{{options.packagePath}}}/domain/annotation
+exception: {{#checkException this}}{{/checkException}}
 ---
 package {{options.package}}.domain.annotation;
 
@@ -30,3 +31,13 @@ public @interface DomainEvent {
      */
     Class<?> aggregateRoot() default void.class;
 } 
+
+<function>
+    window.$HandleBars.registerHelper('checkException', function (boundedContext) {
+        if(boundedContext.views){
+            return true;
+        }else{
+            return false;
+        }
+    });
+</function>

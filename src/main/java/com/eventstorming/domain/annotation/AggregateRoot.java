@@ -1,4 +1,5 @@
 path: {{boundedContext.name}}/{{{options.packagePath}}}/domain/annotation
+exception: {{#checkException this}}{{/checkException}}
 ---
 package {{options.package}}.domain.annotation;
 
@@ -24,4 +25,14 @@ public @interface AggregateRoot {
      * 애그리게이트 루트에 대한 설명
      */
     String description() default "";
-} 
+}
+
+<function>
+    window.$HandleBars.registerHelper('checkException', function (boundedContext) {
+        if(boundedContext.views){
+            return true;
+        }else{
+            return false;
+        }
+    });
+</function>
