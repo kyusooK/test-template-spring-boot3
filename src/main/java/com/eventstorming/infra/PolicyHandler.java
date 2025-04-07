@@ -1,5 +1,5 @@
 representativeFor: Policy
-path: {{name}}/{{{options.packagePath}}}/infrastructure
+path: {{name}}/{{{options.packagePath}}}/infra
 fileName: PolicyHandler.java
 ---
 package {{options.package}}.infrastructure;

@@ -1,4 +1,4 @@
-path: {{name}}/{{{options.packagePath}}}/domain/event
+path: {{name}}/{{{options.packagePath}}}/domain
 fileName: AbstractEvent.java
 ---
 package {{options.package}}.domain.event;
