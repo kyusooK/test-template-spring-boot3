@@ -1,12 +1,9 @@
-
-forEach: Relation
-fileName: {{target.namePascalCase}}Command.java
-path: {{source.boundedContext.name}}/{{{options.packagePath}}}/external
-except: {{contexts.except}}
----
 package {{options.package}}.external;
 
-import javax.persistence.*;
+import {{options.package}}.config.kafka.KafkaProcessor;
+import {{options.package}}.domain.*;
+
+import jakarta.persistence.*;
 import java.util.List;
 import java.util.Date;
 import lombok.Data;
